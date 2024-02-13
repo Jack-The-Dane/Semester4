@@ -1,0 +1,15 @@
+Slides/
+EmbeddedProg/TivaTM4C123GH6PMMicrocontrollerDatasheet.pdf
+Forstærkerteknik/Hambley - Electronics.pdf
+.vscode/
+Debug/
+dvt/
+targetConfigs/
+.ccsproject
+.cproject
+.project
+RemoteSystemTempFiles/
+.settings/
+.metadata/
+.jxbrowser.userdata/
+.launches/
