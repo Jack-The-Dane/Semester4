@@ -22,6 +22,8 @@ unsigned char reverseFirstThreeBits(unsigned char bits){
 	return result;
 }
 
+unsigned char color_array[8] = {0, 0b100, 0b010, 0b110, 0b001, 0b101, 0b011, 0b111};
+
 int main(void)
 {
 	SYSCTL_RCGC2_R = SYSCTL_RCGC2_GPIOF; // Enable clock for port F
@@ -82,7 +84,7 @@ void GPIOF_Handler(void){
 	}else if(counter == 255){
 		counter = 7;
 	}
-	GPIO_PORTF_DATA_R = (reverseFirstThreeBits(counter)<<1);
+	GPIO_PORTF_DATA_R = (color_array[counter]<<1);
 
 	
 	click = true;
