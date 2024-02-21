@@ -21,7 +21,7 @@
   #define _EMP_TYPE_H
 
 /***************************** Include files *******************************/
-
+#include <stdint.h>
 /*****************************    Defines    *******************************/
 
 typedef unsigned char  			BOOLEAN;
