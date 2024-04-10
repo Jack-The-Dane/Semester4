@@ -1,0 +1,5 @@
+half_adder_AND_generic_0_0.v,verilog,xil_defaultlib,../../../bd/half_adder/ip/half_adder_AND_generic_0_0/sim/half_adder_AND_generic_0_0.v,
+half_adder_xor_generic_0_0.v,verilog,xil_defaultlib,../../../bd/half_adder/ip/half_adder_xor_generic_0_0/sim/half_adder_xor_generic_0_0.v,
+half_adder_xlconcat_0_0.v,verilog,xil_defaultlib,../../../bd/half_adder/ip/half_adder_xlconcat_0_0/sim/half_adder_xlconcat_0_0.v,
+half_adder.v,verilog,xil_defaultlib,../../../bd/half_adder/sim/half_adder.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

@@ -1,0 +1,59 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.883982",
+   "Default View_TopLeft":"1614,-338",
+   "ExpandedHierarchyInLayout":"",
+   "PinnedBlocks":"/sim_clk_gen_0|",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace portBus Seconds_LSD -pg 1 -lvl 14 -x 2720 -y -220 -defaultsOSRD
+preplace portBus Seconds_MSD -pg 1 -lvl 14 -x 2720 -y -150 -defaultsOSRD
+preplace portBus Minutes_LSD -pg 1 -lvl 14 -x 2720 -y -90 -defaultsOSRD
+preplace portBus Minutes_MSD -pg 1 -lvl 14 -x 2720 -y -20 -defaultsOSRD
+preplace inst sim_clk_gen_0 -pg 1 -lvl 1 -x -610 -y -50 -defaultsOSRD
+preplace inst Counter_100 -pg 1 -lvl 2 -x -370 -y -50 -defaultsOSRD
+preplace inst Comparator_100 -pg 1 -lvl 3 -x -110 -y -40 -defaultsOSRD
+preplace inst Second_counter -pg 1 -lvl 6 -x 690 -y -90 -defaultsOSRD
+preplace inst Comparator_10_sec -pg 1 -lvl 7 -x 960 -y -90 -defaultsOSRD
+preplace inst Ten_second_counter -pg 1 -lvl 8 -x 1250 -y -140 -defaultsOSRD
+preplace inst Comparator_6_10_sec -pg 1 -lvl 9 -x 1510 -y -40 -defaultsOSRD
+preplace inst Minute_counter -pg 1 -lvl 10 -x 1770 -y 170 -defaultsOSRD
+preplace inst Comparator_10_min -pg 1 -lvl 11 -x 2040 -y 30 -defaultsOSRD
+preplace inst Ten_minute_counter -pg 1 -lvl 12 -x 2310 -y 170 -defaultsOSRD
+preplace inst Counter_10 -pg 1 -lvl 4 -x 160 -y -110 -defaultsOSRD
+preplace inst Comparator_10 -pg 1 -lvl 5 -x 420 -y -100 -defaultsOSRD
+preplace inst cmp_100_0 -pg 1 -lvl 2 -x -370 -y 60 -defaultsOSRD
+preplace inst cmp_10_0 -pg 1 -lvl 4 -x 160 -y 0 -defaultsOSRD
+preplace inst Comparator_8bit_0 -pg 1 -lvl 13 -x 2570 -y 90 -defaultsOSRD
+preplace inst cmp_6_0 -pg 1 -lvl 8 -x 1250 -y -30 -defaultsOSRD
+preplace inst Sec_LSD -pg 1 -lvl 7 -x 960 -y -220 -defaultsOSRD
+preplace inst Sec_MSD -pg 1 -lvl 9 -x 1510 -y -150 -defaultsOSRD
+preplace inst Min_LSD -pg 1 -lvl 11 -x 2040 -y -90 -defaultsOSRD
+preplace inst Min_MSD -pg 1 -lvl 13 -x 2570 -y -20 -defaultsOSRD
+preplace netloc BCD_to_7seg_0_seg_out 1 7 7 1090J -230 NJ -230 NJ -230 NJ -230 NJ -230 NJ -230 2700J
+preplace netloc Comparator_100_output 1 1 3 -500 -120 N -120 20
+preplace netloc Comparator_10_cmp_res 1 3 3 30 -180 NJ -180 550
+preplace netloc Comparator_6_10_sec_output 1 7 3 1120 -220 N -220 1640J
+preplace netloc Comparator_8bit_0_output 1 11 3 2180 240 N 240 2700
+preplace netloc Comparator_8bit_0_output1 1 5 3 560 -280 N -280 1100J
+preplace netloc Comparator_8bit_0_output2 1 9 3 1640 240 N 240 2170J
+preplace netloc Counter_10_counter_out 1 4 1 N -110
+preplace netloc Min_LSD_seg_out 1 11 3 NJ -90 NJ -90 NJ
+preplace netloc Min_MSD_seg_out 1 13 1 N -20
+preplace netloc Minute_counter_counter_out 1 10 1 1910 -90n
+preplace netloc Sec_LSD1_seg_out 1 9 5 NJ -150 NJ -150 NJ -150 NJ -150 NJ
+preplace netloc Second_counter_counter_out 1 6 1 830 -220n
+preplace netloc Ten_minute_counter_counter_out 1 12 1 2440 -20n
+preplace netloc Ten_second_counter_counter_out 1 8 1 1380 -150n
+preplace netloc cmp_100_0_o 1 2 1 -240 -30n
+preplace netloc cmp_10_0_o 1 4 7 290J -170 N -170 820 -160 1110 -210 N -210 N -210 1900
+preplace netloc cmp_6_0_o 1 8 5 1380 100 N 100 N 100 N 100 N
+preplace netloc one_second_counter_out 1 2 1 N -50
+preplace netloc sim_clk_gen_0_clk 1 1 1 N -60
+levelinfo -pg 1 -720 -610 -370 -110 160 420 690 960 1250 1510 1770 2040 2310 2570 2720
+pagesize -pg 1 -db -bbox -sgen -750 -400 2980 330
+"
+}
+{
+   "da_clkrst_cnt":"1"
+}

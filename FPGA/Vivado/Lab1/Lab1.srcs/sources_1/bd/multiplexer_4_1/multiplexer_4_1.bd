@@ -1,0 +1,469 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xD643F699D643F699",
+      "device": "xc7z020clg400-1",
+      "gen_directory": "../../../../Lab1.gen/sources_1/bd/multiplexer_4_1",
+      "name": "multiplexer_4_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2023.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "AND_gate_0": "",
+      "NOT_S0": "",
+      "NOT_S1": "",
+      "AND_gate_1": "",
+      "AND_gate_2": "",
+      "AND_gate_3": "",
+      "AND_gate_4": "",
+      "AND_gate_5": "",
+      "AND_gate_6": "",
+      "AND_gate_7": "",
+      "OR_gate_0": "",
+      "OR_gate_1": "",
+      "OR_gate_2": ""
+    },
+    "ports": {
+      "S0": {
+        "direction": "I"
+      },
+      "S1": {
+        "direction": "I"
+      },
+      "I3": {
+        "direction": "I"
+      },
+      "I2": {
+        "direction": "I"
+      },
+      "I0": {
+        "direction": "I"
+      },
+      "I1": {
+        "direction": "I"
+      },
+      "C_0": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "AND_gate_0": {
+        "vlnv": "xilinx.com:module_ref:AND_gate:1.0",
+        "ip_revision": "1",
+        "xci_name": "multiplexer_4_1_AND_gate_0_0",
+        "xci_path": "ip/multiplexer_4_1_AND_gate_0_0/multiplexer_4_1_AND_gate_0_0.xci",
+        "inst_hier_path": "AND_gate_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "AND_gate",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I"
+          },
+          "B": {
+            "direction": "I"
+          },
+          "C": {
+            "direction": "O"
+          }
+        }
+      },
+      "NOT_S0": {
+        "vlnv": "xilinx.com:module_ref:NOT_gate:1.0",
+        "ip_revision": "1",
+        "xci_name": "multiplexer_4_1_NOT_gate_0_0",
+        "xci_path": "ip/multiplexer_4_1_NOT_gate_0_0/multiplexer_4_1_NOT_gate_0_0.xci",
+        "inst_hier_path": "NOT_S0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "NOT_gate",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I"
+          },
+          "B": {
+            "direction": "O"
+          }
+        }
+      },
+      "NOT_S1": {
+        "vlnv": "xilinx.com:module_ref:NOT_gate:1.0",
+        "ip_revision": "1",
+        "xci_name": "multiplexer_4_1_NOT_gate_1_0",
+        "xci_path": "ip/multiplexer_4_1_NOT_gate_1_0/multiplexer_4_1_NOT_gate_1_0.xci",
+        "inst_hier_path": "NOT_S1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "NOT_gate",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I"
+          },
+          "B": {
+            "direction": "O"
+          }
+        }
+      },
+      "AND_gate_1": {
+        "vlnv": "xilinx.com:module_ref:AND_gate:1.0",
+        "ip_revision": "1",
+        "xci_name": "multiplexer_4_1_AND_gate_0_1",
+        "xci_path": "ip/multiplexer_4_1_AND_gate_0_1/multiplexer_4_1_AND_gate_0_1.xci",
+        "inst_hier_path": "AND_gate_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "AND_gate",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I"
+          },
+          "B": {
+            "direction": "I"
+          },
+          "C": {
+            "direction": "O"
+          }
+        }
+      },
+      "AND_gate_2": {
+        "vlnv": "xilinx.com:module_ref:AND_gate:1.0",
+        "ip_revision": "1",
+        "xci_name": "multiplexer_4_1_AND_gate_2_0",
+        "xci_path": "ip/multiplexer_4_1_AND_gate_2_0/multiplexer_4_1_AND_gate_2_0.xci",
+        "inst_hier_path": "AND_gate_2",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "AND_gate",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I"
+          },
+          "B": {
+            "direction": "I"
+          },
+          "C": {
+            "direction": "O"
+          }
+        }
+      },
+      "AND_gate_3": {
+        "vlnv": "xilinx.com:module_ref:AND_gate:1.0",
+        "ip_revision": "1",
+        "xci_name": "multiplexer_4_1_AND_gate_3_0",
+        "xci_path": "ip/multiplexer_4_1_AND_gate_3_0/multiplexer_4_1_AND_gate_3_0.xci",
+        "inst_hier_path": "AND_gate_3",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "AND_gate",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I"
+          },
+          "B": {
+            "direction": "I"
+          },
+          "C": {
+            "direction": "O"
+          }
+        }
+      },
+      "AND_gate_4": {
+        "vlnv": "xilinx.com:module_ref:AND_gate:1.0",
+        "ip_revision": "1",
+        "xci_name": "multiplexer_4_1_AND_gate_0_2",
+        "xci_path": "ip/multiplexer_4_1_AND_gate_0_2/multiplexer_4_1_AND_gate_0_2.xci",
+        "inst_hier_path": "AND_gate_4",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "AND_gate",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I"
+          },
+          "B": {
+            "direction": "I"
+          },
+          "C": {
+            "direction": "O"
+          }
+        }
+      },
+      "AND_gate_5": {
+        "vlnv": "xilinx.com:module_ref:AND_gate:1.0",
+        "ip_revision": "1",
+        "xci_name": "multiplexer_4_1_AND_gate_0_3",
+        "xci_path": "ip/multiplexer_4_1_AND_gate_0_3/multiplexer_4_1_AND_gate_0_3.xci",
+        "inst_hier_path": "AND_gate_5",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "AND_gate",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I"
+          },
+          "B": {
+            "direction": "I"
+          },
+          "C": {
+            "direction": "O"
+          }
+        }
+      },
+      "AND_gate_6": {
+        "vlnv": "xilinx.com:module_ref:AND_gate:1.0",
+        "ip_revision": "1",
+        "xci_name": "multiplexer_4_1_AND_gate_6_0",
+        "xci_path": "ip/multiplexer_4_1_AND_gate_6_0/multiplexer_4_1_AND_gate_6_0.xci",
+        "inst_hier_path": "AND_gate_6",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "AND_gate",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I"
+          },
+          "B": {
+            "direction": "I"
+          },
+          "C": {
+            "direction": "O"
+          }
+        }
+      },
+      "AND_gate_7": {
+        "vlnv": "xilinx.com:module_ref:AND_gate:1.0",
+        "ip_revision": "1",
+        "xci_name": "multiplexer_4_1_AND_gate_7_0",
+        "xci_path": "ip/multiplexer_4_1_AND_gate_7_0/multiplexer_4_1_AND_gate_7_0.xci",
+        "inst_hier_path": "AND_gate_7",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "AND_gate",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I"
+          },
+          "B": {
+            "direction": "I"
+          },
+          "C": {
+            "direction": "O"
+          }
+        }
+      },
+      "OR_gate_0": {
+        "vlnv": "xilinx.com:module_ref:OR_gate:1.0",
+        "ip_revision": "1",
+        "xci_name": "multiplexer_4_1_OR_gate_0_0",
+        "xci_path": "ip/multiplexer_4_1_OR_gate_0_0/multiplexer_4_1_OR_gate_0_0.xci",
+        "inst_hier_path": "OR_gate_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "OR_gate",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I"
+          },
+          "B": {
+            "direction": "I"
+          },
+          "C": {
+            "direction": "O"
+          }
+        }
+      },
+      "OR_gate_1": {
+        "vlnv": "xilinx.com:module_ref:OR_gate:1.0",
+        "ip_revision": "1",
+        "xci_name": "multiplexer_4_1_OR_gate_1_0",
+        "xci_path": "ip/multiplexer_4_1_OR_gate_1_0/multiplexer_4_1_OR_gate_1_0.xci",
+        "inst_hier_path": "OR_gate_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "OR_gate",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I"
+          },
+          "B": {
+            "direction": "I"
+          },
+          "C": {
+            "direction": "O"
+          }
+        }
+      },
+      "OR_gate_2": {
+        "vlnv": "xilinx.com:module_ref:OR_gate:1.0",
+        "ip_revision": "1",
+        "xci_name": "multiplexer_4_1_OR_gate_2_0",
+        "xci_path": "ip/multiplexer_4_1_OR_gate_2_0/multiplexer_4_1_OR_gate_2_0.xci",
+        "inst_hier_path": "OR_gate_2",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "OR_gate",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I"
+          },
+          "B": {
+            "direction": "I"
+          },
+          "C": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "AND_gate_0_C": {
+        "ports": [
+          "AND_gate_0/C",
+          "AND_gate_4/B"
+        ]
+      },
+      "AND_gate_1_C": {
+        "ports": [
+          "AND_gate_1/C",
+          "AND_gate_6/B"
+        ]
+      },
+      "AND_gate_2_C": {
+        "ports": [
+          "AND_gate_2/C",
+          "AND_gate_7/A"
+        ]
+      },
+      "AND_gate_3_C": {
+        "ports": [
+          "AND_gate_3/C",
+          "AND_gate_5/B"
+        ]
+      },
+      "AND_gate_4_C": {
+        "ports": [
+          "AND_gate_4/C",
+          "OR_gate_1/B"
+        ]
+      },
+      "AND_gate_5_C": {
+        "ports": [
+          "AND_gate_5/C",
+          "OR_gate_0/A"
+        ]
+      },
+      "AND_gate_6_C": {
+        "ports": [
+          "AND_gate_6/C",
+          "OR_gate_0/B"
+        ]
+      },
+      "AND_gate_7_C": {
+        "ports": [
+          "AND_gate_7/C",
+          "OR_gate_1/A"
+        ]
+      },
+      "A_0_1": {
+        "ports": [
+          "S0",
+          "AND_gate_0/A",
+          "AND_gate_2/A",
+          "NOT_S0/A"
+        ]
+      },
+      "A_0_2": {
+        "ports": [
+          "I0",
+          "AND_gate_6/A"
+        ]
+      },
+      "A_1_1": {
+        "ports": [
+          "I3",
+          "AND_gate_4/A"
+        ]
+      },
+      "A_1_2": {
+        "ports": [
+          "I2",
+          "AND_gate_5/A"
+        ]
+      },
+      "B_0_1": {
+        "ports": [
+          "S1",
+          "AND_gate_0/B",
+          "AND_gate_3/A",
+          "NOT_S1/A"
+        ]
+      },
+      "B_0_2": {
+        "ports": [
+          "I1",
+          "AND_gate_7/B"
+        ]
+      },
+      "NOT_gate_0_B": {
+        "ports": [
+          "NOT_S0/B",
+          "AND_gate_1/A",
+          "AND_gate_3/B"
+        ]
+      },
+      "NOT_gate_1_B": {
+        "ports": [
+          "NOT_S1/B",
+          "AND_gate_1/B",
+          "AND_gate_2/B"
+        ]
+      },
+      "OR_gate_0_C": {
+        "ports": [
+          "OR_gate_0/C",
+          "OR_gate_2/A"
+        ]
+      },
+      "OR_gate_1_C": {
+        "ports": [
+          "OR_gate_1/C",
+          "OR_gate_2/B"
+        ]
+      },
+      "OR_gate_2_C": {
+        "ports": [
+          "OR_gate_2/C",
+          "C_0"
+        ]
+      }
+    }
+  }
+}

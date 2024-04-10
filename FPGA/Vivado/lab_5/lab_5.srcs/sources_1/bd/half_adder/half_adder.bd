@@ -1,0 +1,132 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xC8DA20D8C8DA20D8",
+      "device": "xc7z020clg400-1",
+      "gen_directory": "../../../../lab_5.gen/sources_1/bd/half_adder",
+      "name": "half_adder",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2023.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "AND_generic_0": "",
+      "xor_generic_0": "",
+      "xlconcat_0": ""
+    },
+    "ports": {
+      "a": {
+        "direction": "I"
+      },
+      "b": {
+        "direction": "I"
+      },
+      "s": {
+        "direction": "O"
+      },
+      "c": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "AND_generic_0": {
+        "vlnv": "xilinx.com:module_ref:AND_generic:1.0",
+        "ip_revision": "1",
+        "xci_name": "half_adder_AND_generic_0_0",
+        "xci_path": "ip/half_adder_AND_generic_0_0/half_adder_AND_generic_0_0.xci",
+        "inst_hier_path": "AND_generic_0",
+        "parameters": {
+          "n_inputs": {
+            "value": "2"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "AND_generic",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "i": {
+            "direction": "I",
+            "left": "1",
+            "right": "0",
+            "parameters": {
+              "PortWidth": {
+                "value": "2",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "o": {
+            "direction": "O"
+          }
+        }
+      },
+      "xor_generic_0": {
+        "vlnv": "xilinx.com:module_ref:xor_generic:1.0",
+        "ip_revision": "1",
+        "xci_name": "half_adder_xor_generic_0_0",
+        "xci_path": "ip/half_adder_xor_generic_0_0/half_adder_xor_generic_0_0.xci",
+        "inst_hier_path": "xor_generic_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "xor_generic",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a": {
+            "direction": "I"
+          },
+          "b": {
+            "direction": "I"
+          },
+          "o": {
+            "direction": "O"
+          }
+        }
+      },
+      "xlconcat_0": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "ip_revision": "5",
+        "xci_name": "half_adder_xlconcat_0_0",
+        "xci_path": "ip/half_adder_xlconcat_0_0/half_adder_xlconcat_0_0.xci",
+        "inst_hier_path": "xlconcat_0"
+      }
+    },
+    "nets": {
+      "AND_generic_0_o": {
+        "ports": [
+          "AND_generic_0/o",
+          "c"
+        ]
+      },
+      "a_1": {
+        "ports": [
+          "a",
+          "xlconcat_0/In0",
+          "xor_generic_0/a"
+        ]
+      },
+      "b_1": {
+        "ports": [
+          "b",
+          "xlconcat_0/In1",
+          "xor_generic_0/b"
+        ]
+      },
+      "xlconcat_0_dout": {
+        "ports": [
+          "xlconcat_0/dout",
+          "AND_generic_0/i"
+        ]
+      },
+      "xor_generic_0_o": {
+        "ports": [
+          "xor_generic_0/o",
+          "s"
+        ]
+      }
+    }
+  }
+}

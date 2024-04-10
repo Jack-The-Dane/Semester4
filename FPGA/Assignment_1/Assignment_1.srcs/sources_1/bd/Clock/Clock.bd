@@ -1,0 +1,483 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x2F79963983D7B0B7",
+      "device": "xc7z020clg400-1",
+      "gen_directory": "../../../../Assignment_1.gen/sources_1/bd/Clock",
+      "name": "Clock",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2023.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "Counter_1_sec_10kHz": "",
+      "Counter_seconds": "",
+      "Counter_minutes": "",
+      "sceond_splitter": "",
+      "minute_splitter": "",
+      "min_LSD_BCD_to_7seg": "",
+      "sec_LSD_BCD_to_7seg": "",
+      "min_MSD_BCD_to_7seg": "",
+      "sec_MSD_BCD_to_7seg": ""
+    },
+    "ports": {
+      "clk_0": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "rst_0",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "Clock_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "rst_0": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "seconds": {
+        "direction": "O",
+        "left": "5",
+        "right": "0"
+      },
+      "minutes": {
+        "direction": "O",
+        "left": "5",
+        "right": "0"
+      },
+      "Seconds_LSD": {
+        "direction": "O",
+        "left": "6",
+        "right": "0"
+      },
+      "Seconds_MSD": {
+        "direction": "O",
+        "left": "6",
+        "right": "0"
+      },
+      "Minutes_LSD": {
+        "direction": "O",
+        "left": "6",
+        "right": "0"
+      },
+      "Minutes_MSD": {
+        "direction": "O",
+        "left": "6",
+        "right": "0"
+      }
+    },
+    "components": {
+      "Counter_1_sec_10kHz": {
+        "vlnv": "xilinx.com:module_ref:Counter_generic:1.0",
+        "ip_revision": "1",
+        "xci_name": "Clock_Counter_generic_0_0",
+        "xci_path": "ip/Clock_Counter_generic_0_0/Clock_Counter_generic_0_0.xci",
+        "inst_hier_path": "Counter_1_sec_10kHz",
+        "parameters": {
+          "bit_width": {
+            "value": "14"
+          },
+          "max_val": {
+            "value": "9999"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Counter_generic",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "Clock_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "cnt_full": {
+            "direction": "O"
+          },
+          "current_val": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          }
+        }
+      },
+      "Counter_seconds": {
+        "vlnv": "xilinx.com:module_ref:Counter_generic:1.0",
+        "ip_revision": "1",
+        "xci_name": "Clock_Counter_generic_0_1",
+        "xci_path": "ip/Clock_Counter_generic_0_1/Clock_Counter_generic_0_1.xci",
+        "inst_hier_path": "Counter_seconds",
+        "parameters": {
+          "bit_width": {
+            "value": "6"
+          },
+          "max_val": {
+            "value": "59"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Counter_generic",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "cnt_full": {
+            "direction": "O"
+          },
+          "current_val": {
+            "direction": "O",
+            "left": "5",
+            "right": "0"
+          }
+        }
+      },
+      "Counter_minutes": {
+        "vlnv": "xilinx.com:module_ref:Counter_generic:1.0",
+        "ip_revision": "1",
+        "xci_name": "Clock_Counter_generic_0_2",
+        "xci_path": "ip/Clock_Counter_generic_0_2/Clock_Counter_generic_0_2.xci",
+        "inst_hier_path": "Counter_minutes",
+        "parameters": {
+          "bit_width": {
+            "value": "6"
+          },
+          "max_val": {
+            "value": "59"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Counter_generic",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "cnt_full": {
+            "direction": "O"
+          },
+          "current_val": {
+            "direction": "O",
+            "left": "5",
+            "right": "0"
+          }
+        }
+      },
+      "sceond_splitter": {
+        "vlnv": "xilinx.com:module_ref:digit_splitter:1.0",
+        "ip_revision": "1",
+        "xci_name": "Clock_digit_splitter_0_0",
+        "xci_path": "ip/Clock_digit_splitter_0_0/Clock_digit_splitter_0_0.xci",
+        "inst_hier_path": "sceond_splitter",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "digit_splitter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "digits_in": {
+            "direction": "I",
+            "left": "6",
+            "right": "0"
+          },
+          "LSD_out": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "MSD_out": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      },
+      "minute_splitter": {
+        "vlnv": "xilinx.com:module_ref:digit_splitter:1.0",
+        "ip_revision": "1",
+        "xci_name": "Clock_digit_splitter_0_1",
+        "xci_path": "ip/Clock_digit_splitter_0_1/Clock_digit_splitter_0_1.xci",
+        "inst_hier_path": "minute_splitter",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "digit_splitter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "digits_in": {
+            "direction": "I",
+            "left": "6",
+            "right": "0"
+          },
+          "LSD_out": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "MSD_out": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      },
+      "min_LSD_BCD_to_7seg": {
+        "vlnv": "xilinx.com:module_ref:BCD_to_7seg:1.0",
+        "ip_revision": "1",
+        "xci_name": "Clock_BCD_to_7seg_0_0",
+        "xci_path": "ip/Clock_BCD_to_7seg_0_0/Clock_BCD_to_7seg_0_0.xci",
+        "inst_hier_path": "min_LSD_BCD_to_7seg",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "BCD_to_7seg",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "BCD": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "seg_out": {
+            "direction": "O",
+            "left": "6",
+            "right": "0"
+          }
+        }
+      },
+      "sec_LSD_BCD_to_7seg": {
+        "vlnv": "xilinx.com:module_ref:BCD_to_7seg:1.0",
+        "ip_revision": "1",
+        "xci_name": "Clock_BCD_to_7seg_0_1",
+        "xci_path": "ip/Clock_BCD_to_7seg_0_1/Clock_BCD_to_7seg_0_1.xci",
+        "inst_hier_path": "sec_LSD_BCD_to_7seg",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "BCD_to_7seg",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "BCD": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "seg_out": {
+            "direction": "O",
+            "left": "6",
+            "right": "0"
+          }
+        }
+      },
+      "min_MSD_BCD_to_7seg": {
+        "vlnv": "xilinx.com:module_ref:BCD_to_7seg:1.0",
+        "ip_revision": "1",
+        "xci_name": "Clock_BCD_to_7seg_0_2",
+        "xci_path": "ip/Clock_BCD_to_7seg_0_2/Clock_BCD_to_7seg_0_2.xci",
+        "inst_hier_path": "min_MSD_BCD_to_7seg",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "BCD_to_7seg",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "BCD": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "seg_out": {
+            "direction": "O",
+            "left": "6",
+            "right": "0"
+          }
+        }
+      },
+      "sec_MSD_BCD_to_7seg": {
+        "vlnv": "xilinx.com:module_ref:BCD_to_7seg:1.0",
+        "ip_revision": "1",
+        "xci_name": "Clock_BCD_to_7seg_0_3",
+        "xci_path": "ip/Clock_BCD_to_7seg_0_3/Clock_BCD_to_7seg_0_3.xci",
+        "inst_hier_path": "sec_MSD_BCD_to_7seg",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "BCD_to_7seg",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "BCD": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "seg_out": {
+            "direction": "O",
+            "left": "6",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "Counter_1_sec_cnt_full": {
+        "ports": [
+          "Counter_1_sec_10kHz/cnt_full",
+          "Counter_seconds/clk"
+        ]
+      },
+      "Counter_minutes_current_val": {
+        "ports": [
+          "Counter_minutes/current_val",
+          "minutes",
+          "minute_splitter/digits_in"
+        ]
+      },
+      "Counter_seconds_cnt_full": {
+        "ports": [
+          "Counter_seconds/cnt_full",
+          "Counter_minutes/clk"
+        ]
+      },
+      "Counter_seconds_current_val": {
+        "ports": [
+          "Counter_seconds/current_val",
+          "seconds",
+          "sceond_splitter/digits_in"
+        ]
+      },
+      "clk_0_1": {
+        "ports": [
+          "clk_0",
+          "Counter_1_sec_10kHz/clk"
+        ]
+      },
+      "min_LSD_BCD_to_7seg_seg_out": {
+        "ports": [
+          "min_LSD_BCD_to_7seg/seg_out",
+          "Minutes_LSD"
+        ]
+      },
+      "min_MSD_BCD_to_7seg_seg_out": {
+        "ports": [
+          "min_MSD_BCD_to_7seg/seg_out",
+          "Minutes_MSD"
+        ]
+      },
+      "minute_splitter_LSD_out": {
+        "ports": [
+          "minute_splitter/LSD_out",
+          "min_LSD_BCD_to_7seg/BCD"
+        ]
+      },
+      "minute_splitter_MSD_out": {
+        "ports": [
+          "minute_splitter/MSD_out",
+          "min_MSD_BCD_to_7seg/BCD"
+        ]
+      },
+      "rst_0_1": {
+        "ports": [
+          "rst_0",
+          "Counter_seconds/rst",
+          "Counter_minutes/rst",
+          "Counter_1_sec_10kHz/rst"
+        ]
+      },
+      "sceond_splitter_LSD_out": {
+        "ports": [
+          "sceond_splitter/LSD_out",
+          "sec_LSD_BCD_to_7seg/BCD"
+        ]
+      },
+      "sceond_splitter_MSD_out": {
+        "ports": [
+          "sceond_splitter/MSD_out",
+          "sec_MSD_BCD_to_7seg/BCD"
+        ]
+      },
+      "sec_LSD_BCD_to_7seg_seg_out": {
+        "ports": [
+          "sec_LSD_BCD_to_7seg/seg_out",
+          "Seconds_LSD"
+        ]
+      },
+      "sec_MSD_BCD_to_7seg_seg_out": {
+        "ports": [
+          "sec_MSD_BCD_to_7seg/seg_out",
+          "Seconds_MSD"
+        ]
+      }
+    }
+  }
+}

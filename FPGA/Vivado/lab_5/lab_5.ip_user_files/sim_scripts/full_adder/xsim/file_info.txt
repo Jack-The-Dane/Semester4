@@ -1,0 +1,12 @@
+half_adder_xlconcat_0_0.v,verilog,xil_defaultlib,../../../bd/full_adder/ip/full_adder_half_adder_0_0/src/half_adder_xlconcat_0_0/sim/half_adder_xlconcat_0_0.v,
+AND_generic.vhd,vhdl,xil_defaultlib,../../../bd/full_adder/ipshared/a74b/src/AND_generic.vhd,
+half_adder_AND_generic_0_0.v,verilog,xil_defaultlib,../../../bd/full_adder/ipshared/a74b/sim/half_adder_AND_generic_0_0.v,
+xor_generic.vhd,vhdl,xil_defaultlib,../../../bd/full_adder/ipshared/a74b/src/xor_generic.vhd,
+half_adder_xor_generic_0_0.v,verilog,xil_defaultlib,../../../bd/full_adder/ipshared/a74b/sim/half_adder_xor_generic_0_0.v,
+half_adder.v,verilog,xil_defaultlib,../../../bd/full_adder/ipshared/a74b/sim/half_adder.v,
+full_adder_half_adder_0_0.v,verilog,xil_defaultlib,../../../bd/full_adder/ip/full_adder_half_adder_0_0/sim/full_adder_half_adder_0_0.v,
+full_adder_OR_generic_0_0.v,verilog,xil_defaultlib,../../../bd/full_adder/ip/full_adder_OR_generic_0_0/sim/full_adder_OR_generic_0_0.v,
+full_adder_xlconcat_0_0.v,verilog,xil_defaultlib,../../../bd/full_adder/ip/full_adder_xlconcat_0_0/sim/full_adder_xlconcat_0_0.v,
+full_adder_half_adder_1_0.v,verilog,xil_defaultlib,../../../bd/full_adder/ip/full_adder_half_adder_1_0/sim/full_adder_half_adder_1_0.v,
+full_adder.v,verilog,xil_defaultlib,../../../bd/full_adder/sim/full_adder.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

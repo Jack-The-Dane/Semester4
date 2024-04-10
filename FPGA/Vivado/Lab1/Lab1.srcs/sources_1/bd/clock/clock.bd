@@ -1,0 +1,730 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x544C9805544C9805",
+      "device": "xc7z020clg400-1",
+      "gen_directory": "../../../../Lab1.gen/sources_1/bd/clock",
+      "name": "clock",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2023.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "sim_clk_gen_0": "",
+      "Counter_100": "",
+      "Comparator_100": "",
+      "Second_counter": "",
+      "Comparator_10_sec": "",
+      "Ten_second_counter": "",
+      "Comparator_6_10_sec": "",
+      "Minute_counter": "",
+      "Comparator_10_min": "",
+      "Ten_minute_counter": "",
+      "Counter_10": "",
+      "Comparator_10": "",
+      "cmp_100_0": "",
+      "cmp_10_0": "",
+      "Comparator_8bit_0": "",
+      "cmp_6_0": "",
+      "Sec_LSD": "",
+      "Sec_MSD": "",
+      "Min_LSD": "",
+      "Min_MSD": ""
+    },
+    "ports": {
+      "Seconds_LSD": {
+        "direction": "O",
+        "left": "6",
+        "right": "0"
+      },
+      "Seconds_MSD": {
+        "direction": "O",
+        "left": "6",
+        "right": "0"
+      },
+      "Minutes_LSD": {
+        "direction": "O",
+        "left": "6",
+        "right": "0"
+      },
+      "Minutes_MSD": {
+        "direction": "O",
+        "left": "6",
+        "right": "0"
+      }
+    },
+    "components": {
+      "sim_clk_gen_0": {
+        "vlnv": "xilinx.com:ip:sim_clk_gen:1.0",
+        "ip_revision": "3",
+        "xci_name": "clock_sim_clk_gen_0_0",
+        "xci_path": "ip/clock_sim_clk_gen_0_0/clock_sim_clk_gen_0_0.xci",
+        "inst_hier_path": "sim_clk_gen_0",
+        "parameters": {
+          "FREQ_HZ": {
+            "value": "1000"
+          },
+          "RESET_POLARITY": {
+            "value": "ACTIVE_LOW"
+          }
+        }
+      },
+      "Counter_100": {
+        "vlnv": "xilinx.com:module_ref:Counter_8bit:1.0",
+        "ip_revision": "1",
+        "xci_name": "clock_Counter_8bit_0_0",
+        "xci_path": "ip/clock_Counter_8bit_0_0/clock_Counter_8bit_0_0.xci",
+        "inst_hier_path": "Counter_100",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Counter_8bit",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              },
+              "FREQ_HZ": {
+                "value": "1000",
+                "value_src": "user_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "clock_sim_clk_gen_0_0_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "counter_out": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      },
+      "Comparator_100": {
+        "vlnv": "xilinx.com:module_ref:Comparator_8bit:1.0",
+        "ip_revision": "1",
+        "xci_name": "clock_Comparator_8bit_0_0",
+        "xci_path": "ip/clock_Comparator_8bit_0_0/clock_Comparator_8bit_0_0.xci",
+        "inst_hier_path": "Comparator_100",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Comparator_8bit",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "cmp_in": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "cmp_val": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "cmp_res": {
+            "direction": "O"
+          }
+        }
+      },
+      "Second_counter": {
+        "vlnv": "xilinx.com:module_ref:Counter_8bit:1.0",
+        "ip_revision": "1",
+        "xci_name": "clock_Counter_8bit_0_1",
+        "xci_path": "ip/clock_Counter_8bit_0_1/clock_Counter_8bit_0_1.xci",
+        "inst_hier_path": "Second_counter",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Counter_8bit",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "counter_out": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      },
+      "Comparator_10_sec": {
+        "vlnv": "xilinx.com:module_ref:Comparator_8bit:1.0",
+        "ip_revision": "1",
+        "xci_name": "clock_Comparator_8bit_0_1",
+        "xci_path": "ip/clock_Comparator_8bit_0_1/clock_Comparator_8bit_0_1.xci",
+        "inst_hier_path": "Comparator_10_sec",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Comparator_8bit",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "cmp_in": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "cmp_val": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "cmp_res": {
+            "direction": "O"
+          }
+        }
+      },
+      "Ten_second_counter": {
+        "vlnv": "xilinx.com:module_ref:Counter_8bit:1.0",
+        "ip_revision": "1",
+        "xci_name": "clock_Counter_8bit_0_2",
+        "xci_path": "ip/clock_Counter_8bit_0_2/clock_Counter_8bit_0_2.xci",
+        "inst_hier_path": "Ten_second_counter",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Counter_8bit",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "counter_out": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      },
+      "Comparator_6_10_sec": {
+        "vlnv": "xilinx.com:module_ref:Comparator_8bit:1.0",
+        "ip_revision": "1",
+        "xci_name": "clock_Comparator_8bit_0_2",
+        "xci_path": "ip/clock_Comparator_8bit_0_2/clock_Comparator_8bit_0_2.xci",
+        "inst_hier_path": "Comparator_6_10_sec",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Comparator_8bit",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "cmp_in": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "cmp_val": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "cmp_res": {
+            "direction": "O"
+          }
+        }
+      },
+      "Minute_counter": {
+        "vlnv": "xilinx.com:module_ref:Counter_8bit:1.0",
+        "ip_revision": "1",
+        "xci_name": "clock_Counter_8bit_0_3",
+        "xci_path": "ip/clock_Counter_8bit_0_3/clock_Counter_8bit_0_3.xci",
+        "inst_hier_path": "Minute_counter",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Counter_8bit",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "counter_out": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      },
+      "Comparator_10_min": {
+        "vlnv": "xilinx.com:module_ref:Comparator_8bit:1.0",
+        "ip_revision": "1",
+        "xci_name": "clock_Comparator_8bit_0_3",
+        "xci_path": "ip/clock_Comparator_8bit_0_3/clock_Comparator_8bit_0_3.xci",
+        "inst_hier_path": "Comparator_10_min",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Comparator_8bit",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "cmp_in": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "cmp_val": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "cmp_res": {
+            "direction": "O"
+          }
+        }
+      },
+      "Ten_minute_counter": {
+        "vlnv": "xilinx.com:module_ref:Counter_8bit:1.0",
+        "ip_revision": "1",
+        "xci_name": "clock_Counter_8bit_0_4",
+        "xci_path": "ip/clock_Counter_8bit_0_4/clock_Counter_8bit_0_4.xci",
+        "inst_hier_path": "Ten_minute_counter",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Counter_8bit",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "counter_out": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      },
+      "Counter_10": {
+        "vlnv": "xilinx.com:module_ref:Counter_8bit:1.0",
+        "ip_revision": "1",
+        "xci_name": "clock_Counter_8bit_0_5",
+        "xci_path": "ip/clock_Counter_8bit_0_5/clock_Counter_8bit_0_5.xci",
+        "inst_hier_path": "Counter_10",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Counter_8bit",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "counter_out": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      },
+      "Comparator_10": {
+        "vlnv": "xilinx.com:module_ref:Comparator_8bit:1.0",
+        "ip_revision": "1",
+        "xci_name": "clock_Comparator_8bit_0_4",
+        "xci_path": "ip/clock_Comparator_8bit_0_4/clock_Comparator_8bit_0_4.xci",
+        "inst_hier_path": "Comparator_10",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Comparator_8bit",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "cmp_in": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "cmp_val": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "cmp_res": {
+            "direction": "O"
+          }
+        }
+      },
+      "cmp_100_0": {
+        "vlnv": "xilinx.com:module_ref:cmp_100:1.0",
+        "ip_revision": "1",
+        "xci_name": "clock_cmp_100_0_0",
+        "xci_path": "ip/clock_cmp_100_0_0/clock_cmp_100_0_0.xci",
+        "inst_hier_path": "cmp_100_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "cmp_100",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "o": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      },
+      "cmp_10_0": {
+        "vlnv": "xilinx.com:module_ref:cmp_10:1.0",
+        "ip_revision": "1",
+        "xci_name": "clock_cmp_10_0_0",
+        "xci_path": "ip/clock_cmp_10_0_0/clock_cmp_10_0_0.xci",
+        "inst_hier_path": "cmp_10_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "cmp_10",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "o": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      },
+      "Comparator_8bit_0": {
+        "vlnv": "xilinx.com:module_ref:Comparator_8bit:1.0",
+        "ip_revision": "1",
+        "xci_name": "clock_Comparator_8bit_0_5",
+        "xci_path": "ip/clock_Comparator_8bit_0_5/clock_Comparator_8bit_0_5.xci",
+        "inst_hier_path": "Comparator_8bit_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Comparator_8bit",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "cmp_in": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "cmp_val": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "cmp_res": {
+            "direction": "O"
+          }
+        }
+      },
+      "cmp_6_0": {
+        "vlnv": "xilinx.com:module_ref:cmp_6:1.0",
+        "ip_revision": "1",
+        "xci_name": "clock_cmp_6_0_0",
+        "xci_path": "ip/clock_cmp_6_0_0/clock_cmp_6_0_0.xci",
+        "inst_hier_path": "cmp_6_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "cmp_6",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "o": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      },
+      "Sec_LSD": {
+        "vlnv": "xilinx.com:module_ref:BCD_to_7seg:1.0",
+        "ip_revision": "1",
+        "xci_name": "clock_BCD_to_7seg_0_0",
+        "xci_path": "ip/clock_BCD_to_7seg_0_0/clock_BCD_to_7seg_0_0.xci",
+        "inst_hier_path": "Sec_LSD",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "BCD_to_7seg",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "BCD": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "seg_out": {
+            "direction": "O",
+            "left": "6",
+            "right": "0"
+          }
+        }
+      },
+      "Sec_MSD": {
+        "vlnv": "xilinx.com:module_ref:BCD_to_7seg:1.0",
+        "ip_revision": "1",
+        "xci_name": "clock_Sec_LSD_0",
+        "xci_path": "ip/clock_Sec_LSD_0/clock_Sec_LSD_0.xci",
+        "inst_hier_path": "Sec_MSD",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "BCD_to_7seg",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "BCD": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "seg_out": {
+            "direction": "O",
+            "left": "6",
+            "right": "0"
+          }
+        }
+      },
+      "Min_LSD": {
+        "vlnv": "xilinx.com:module_ref:BCD_to_7seg:1.0",
+        "ip_revision": "1",
+        "xci_name": "clock_BCD_to_7seg_0_1",
+        "xci_path": "ip/clock_BCD_to_7seg_0_1/clock_BCD_to_7seg_0_1.xci",
+        "inst_hier_path": "Min_LSD",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "BCD_to_7seg",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "BCD": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "seg_out": {
+            "direction": "O",
+            "left": "6",
+            "right": "0"
+          }
+        }
+      },
+      "Min_MSD": {
+        "vlnv": "xilinx.com:module_ref:BCD_to_7seg:1.0",
+        "ip_revision": "1",
+        "xci_name": "clock_BCD_to_7seg_0_2",
+        "xci_path": "ip/clock_BCD_to_7seg_0_2/clock_BCD_to_7seg_0_2.xci",
+        "inst_hier_path": "Min_MSD",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "BCD_to_7seg",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "BCD": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "seg_out": {
+            "direction": "O",
+            "left": "6",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "BCD_to_7seg_0_seg_out": {
+        "ports": [
+          "Sec_LSD/seg_out",
+          "Seconds_LSD"
+        ]
+      },
+      "Comparator_100_output": {
+        "ports": [
+          "Comparator_100/cmp_res",
+          "Counter_100/rst",
+          "Counter_10/clk"
+        ]
+      },
+      "Comparator_10_cmp_res": {
+        "ports": [
+          "Comparator_10/cmp_res",
+          "Second_counter/clk",
+          "Counter_10/rst"
+        ]
+      },
+      "Comparator_6_10_sec_output": {
+        "ports": [
+          "Comparator_6_10_sec/cmp_res",
+          "Ten_second_counter/rst",
+          "Minute_counter/clk"
+        ]
+      },
+      "Comparator_8bit_0_output": {
+        "ports": [
+          "Comparator_8bit_0/cmp_res",
+          "Ten_minute_counter/rst"
+        ]
+      },
+      "Comparator_8bit_0_output1": {
+        "ports": [
+          "Comparator_10_sec/cmp_res",
+          "Second_counter/rst",
+          "Ten_second_counter/clk"
+        ]
+      },
+      "Comparator_8bit_0_output2": {
+        "ports": [
+          "Comparator_10_min/cmp_res",
+          "Minute_counter/rst",
+          "Ten_minute_counter/clk"
+        ]
+      },
+      "Counter_10_counter_out": {
+        "ports": [
+          "Counter_10/counter_out",
+          "Comparator_10/cmp_in"
+        ]
+      },
+      "Min_LSD_seg_out": {
+        "ports": [
+          "Min_LSD/seg_out",
+          "Minutes_LSD"
+        ]
+      },
+      "Min_MSD_seg_out": {
+        "ports": [
+          "Min_MSD/seg_out",
+          "Minutes_MSD"
+        ]
+      },
+      "Minute_counter_counter_out": {
+        "ports": [
+          "Minute_counter/counter_out",
+          "Min_LSD/BCD",
+          "Comparator_10_min/cmp_in"
+        ]
+      },
+      "Sec_LSD1_seg_out": {
+        "ports": [
+          "Sec_MSD/seg_out",
+          "Seconds_MSD"
+        ]
+      },
+      "Second_counter_counter_out": {
+        "ports": [
+          "Second_counter/counter_out",
+          "Sec_LSD/BCD",
+          "Comparator_10_sec/cmp_in"
+        ]
+      },
+      "Ten_minute_counter_counter_out": {
+        "ports": [
+          "Ten_minute_counter/counter_out",
+          "Min_MSD/BCD",
+          "Comparator_8bit_0/cmp_in"
+        ]
+      },
+      "Ten_second_counter_counter_out": {
+        "ports": [
+          "Ten_second_counter/counter_out",
+          "Sec_MSD/BCD",
+          "Comparator_6_10_sec/cmp_in"
+        ]
+      },
+      "cmp_100_0_o": {
+        "ports": [
+          "cmp_100_0/o",
+          "Comparator_100/cmp_val"
+        ]
+      },
+      "cmp_10_0_o": {
+        "ports": [
+          "cmp_10_0/o",
+          "Comparator_10_sec/cmp_val",
+          "Comparator_10_min/cmp_val",
+          "Comparator_10/cmp_val"
+        ]
+      },
+      "cmp_6_0_o": {
+        "ports": [
+          "cmp_6_0/o",
+          "Comparator_6_10_sec/cmp_val",
+          "Comparator_8bit_0/cmp_val"
+        ]
+      },
+      "one_second_counter_out": {
+        "ports": [
+          "Counter_100/counter_out",
+          "Comparator_100/cmp_in"
+        ]
+      },
+      "sim_clk_gen_0_clk": {
+        "ports": [
+          "sim_clk_gen_0/clk",
+          "Counter_100/clk"
+        ]
+      }
+    }
+  }
+}

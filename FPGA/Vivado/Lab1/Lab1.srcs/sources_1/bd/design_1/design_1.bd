@@ -1,0 +1,112 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x330C36A2330C36A2",
+      "device": "xc7z020clg400-1",
+      "gen_directory": "../../../../Lab1.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2023.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "AND_gate_0": "",
+      "AND_gate_2": ""
+    },
+    "ports": {
+      "A_0": {
+        "direction": "I"
+      },
+      "B_0": {
+        "direction": "I"
+      },
+      "A_1": {
+        "direction": "I"
+      },
+      "C_0": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "AND_gate_0": {
+        "vlnv": "xilinx.com:module_ref:AND_gate:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_1_AND_gate_0_0",
+        "xci_path": "ip/design_1_AND_gate_0_0/design_1_AND_gate_0_0.xci",
+        "inst_hier_path": "AND_gate_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "AND_gate",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I"
+          },
+          "B": {
+            "direction": "I"
+          },
+          "C": {
+            "direction": "O"
+          }
+        }
+      },
+      "AND_gate_2": {
+        "vlnv": "xilinx.com:module_ref:AND_gate:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_1_AND_gate_2_0",
+        "xci_path": "ip/design_1_AND_gate_2_0/design_1_AND_gate_2_0.xci",
+        "inst_hier_path": "AND_gate_2",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "AND_gate",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I"
+          },
+          "B": {
+            "direction": "I"
+          },
+          "C": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "AND_gate_0_C": {
+        "ports": [
+          "AND_gate_0/C",
+          "AND_gate_2/A"
+        ]
+      },
+      "AND_gate_2_C": {
+        "ports": [
+          "AND_gate_2/C",
+          "C_0"
+        ]
+      },
+      "A_0_1": {
+        "ports": [
+          "A_0",
+          "AND_gate_0/A"
+        ]
+      },
+      "A_1_1": {
+        "ports": [
+          "A_1",
+          "AND_gate_2/B"
+        ]
+      },
+      "B_0_1": {
+        "ports": [
+          "B_0",
+          "AND_gate_0/B"
+        ]
+      }
+    }
+  }
+}

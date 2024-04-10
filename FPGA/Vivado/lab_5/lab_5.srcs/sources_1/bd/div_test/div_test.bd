@@ -1,0 +1,166 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xC62C7C244E3368EA",
+      "device": "xc7z020clg400-1",
+      "gen_directory": "../../../../lab_5.gen/sources_1/bd/div_test",
+      "name": "div_test",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2023.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "clock_divider_0": "",
+      "Counter_8bit_0": ""
+    },
+    "ports": {
+      "counter_out_0": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "rst_0": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "clk_0": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "rst_0",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "div_test_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "clock_divider_0": {
+        "vlnv": "xilinx.com:module_ref:clock_divider:1.0",
+        "ip_revision": "1",
+        "xci_name": "div_test_clock_divider_0_0",
+        "xci_path": "ip/div_test_clock_divider_0_0/div_test_clock_divider_0_0.xci",
+        "inst_hier_path": "clock_divider_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "clock_divider",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "div_test_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "clk_div": {
+            "direction": "O"
+          }
+        }
+      },
+      "Counter_8bit_0": {
+        "vlnv": "xilinx.com:module_ref:Counter_8bit:1.0",
+        "ip_revision": "1",
+        "xci_name": "div_test_Counter_8bit_0_0",
+        "xci_path": "ip/div_test_Counter_8bit_0_0/div_test_Counter_8bit_0_0.xci",
+        "inst_hier_path": "Counter_8bit_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Counter_8bit",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "counter_out": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "Counter_8bit_0_counter_out": {
+        "ports": [
+          "Counter_8bit_0/counter_out",
+          "counter_out_0"
+        ]
+      },
+      "clk_0_1": {
+        "ports": [
+          "clk_0",
+          "clock_divider_0/clk"
+        ]
+      },
+      "clock_divider_0_clk_div": {
+        "ports": [
+          "clock_divider_0/clk_div",
+          "Counter_8bit_0/clk"
+        ]
+      },
+      "rst_0_1": {
+        "ports": [
+          "rst_0",
+          "clock_divider_0/rst",
+          "Counter_8bit_0/rst"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,1 @@
+vopt -64 -l elaborate.log +acc=npr -suppress 10016  -L xil_defaultlib -L xlconcat_v2_1_5 -L unisims_ver -L unimacro_ver -L secureip -work xil_defaultlib xil_defaultlib.half_adder xil_defaultlib.glbl -o half_adder_opt

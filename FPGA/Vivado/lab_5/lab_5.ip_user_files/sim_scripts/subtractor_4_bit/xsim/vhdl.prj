@@ -1,0 +1,7 @@
+vhdl xil_defaultlib  \
+"../../../bd/subtractor_4_bit/ip/subtractor_4_bit_full_adder_0_0/src/full_adder_half_adder_0_0/src/AND_generic.vhd" \
+"../../../bd/subtractor_4_bit/ip/subtractor_4_bit_full_adder_0_0/src/full_adder_half_adder_0_0/src/xor_generic.vhd" \
+"../../../bd/subtractor_4_bit/ipshared/c271/src/OR_generic.vhd" \
+
+# Do not sort compile order
+nosort

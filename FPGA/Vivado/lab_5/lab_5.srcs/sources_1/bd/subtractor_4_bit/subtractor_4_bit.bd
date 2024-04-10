@@ -1,0 +1,544 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x8D3C951E7CDBC908",
+      "device": "xc7z020clg400-1",
+      "gen_directory": "../../../../lab_5.gen/sources_1/bd/subtractor_4_bit",
+      "name": "subtractor_4_bit",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2023.2"
+    },
+    "design_tree": {
+      "xor_generic_0": "",
+      "full_adder_0": "",
+      "xlconstant_0": "",
+      "bslice_0": "",
+      "full_adder_1": "",
+      "xor_generic_1": "",
+      "aslice_0": "",
+      "bslice_1": "",
+      "bslice_2": "",
+      "bslice_3": "",
+      "aslice_1": "",
+      "aslice_2": "",
+      "aslice_3": "",
+      "xor_generic_2": "",
+      "xor_generic_3": "",
+      "full_adder_2": "",
+      "full_adder_3": "",
+      "xlconcat_0": "",
+      "NOT_gate_0": "",
+      "xlconcat_1": ""
+    },
+    "ports": {
+      "a": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "b": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "signed_output": {
+        "direction": "O",
+        "left": "4",
+        "right": "0"
+      },
+      "c_out": {
+        "direction": "O"
+      },
+      "s": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      }
+    },
+    "components": {
+      "xor_generic_0": {
+        "vlnv": "xilinx.com:module_ref:xor_generic:1.0",
+        "ip_revision": "1",
+        "xci_name": "subtractor_4_bit_xor_generic_0_0",
+        "xci_path": "ip/subtractor_4_bit_xor_generic_0_0/subtractor_4_bit_xor_generic_0_0.xci",
+        "inst_hier_path": "xor_generic_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "xor_generic",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a": {
+            "direction": "I"
+          },
+          "b": {
+            "direction": "I"
+          },
+          "o": {
+            "direction": "O"
+          }
+        }
+      },
+      "full_adder_0": {
+        "vlnv": "user.org:user:full_adder:1.0",
+        "ip_revision": "2",
+        "xci_name": "subtractor_4_bit_full_adder_0_0",
+        "xci_path": "ip/subtractor_4_bit_full_adder_0_0/subtractor_4_bit_full_adder_0_0.xci",
+        "inst_hier_path": "full_adder_0"
+      },
+      "xlconstant_0": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "ip_revision": "8",
+        "xci_name": "subtractor_4_bit_xlconstant_0_0",
+        "xci_path": "ip/subtractor_4_bit_xlconstant_0_0/subtractor_4_bit_xlconstant_0_0.xci",
+        "inst_hier_path": "xlconstant_0"
+      },
+      "bslice_0": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "ip_revision": "3",
+        "xci_name": "subtractor_4_bit_xlslice_0_0",
+        "xci_path": "ip/subtractor_4_bit_xlslice_0_0/subtractor_4_bit_xlslice_0_0.xci",
+        "inst_hier_path": "bslice_0",
+        "parameters": {
+          "DIN_WIDTH": {
+            "value": "4"
+          }
+        }
+      },
+      "full_adder_1": {
+        "vlnv": "user.org:user:full_adder:1.0",
+        "ip_revision": "2",
+        "xci_name": "subtractor_4_bit_full_adder_1_0",
+        "xci_path": "ip/subtractor_4_bit_full_adder_1_0/subtractor_4_bit_full_adder_1_0.xci",
+        "inst_hier_path": "full_adder_1"
+      },
+      "xor_generic_1": {
+        "vlnv": "xilinx.com:module_ref:xor_generic:1.0",
+        "ip_revision": "1",
+        "xci_name": "subtractor_4_bit_xor_generic_1_0",
+        "xci_path": "ip/subtractor_4_bit_xor_generic_1_0/subtractor_4_bit_xor_generic_1_0.xci",
+        "inst_hier_path": "xor_generic_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "xor_generic",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a": {
+            "direction": "I"
+          },
+          "b": {
+            "direction": "I"
+          },
+          "o": {
+            "direction": "O"
+          }
+        }
+      },
+      "aslice_0": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "ip_revision": "3",
+        "xci_name": "subtractor_4_bit_xlslice_0_3",
+        "xci_path": "ip/subtractor_4_bit_xlslice_0_3/subtractor_4_bit_xlslice_0_3.xci",
+        "inst_hier_path": "aslice_0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "0"
+          },
+          "DIN_TO": {
+            "value": "0"
+          },
+          "DIN_WIDTH": {
+            "value": "4"
+          }
+        }
+      },
+      "bslice_1": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "ip_revision": "3",
+        "xci_name": "subtractor_4_bit_bslice_0_0",
+        "xci_path": "ip/subtractor_4_bit_bslice_0_0/subtractor_4_bit_bslice_0_0.xci",
+        "inst_hier_path": "bslice_1",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "1"
+          },
+          "DIN_TO": {
+            "value": "1"
+          },
+          "DIN_WIDTH": {
+            "value": "4"
+          }
+        }
+      },
+      "bslice_2": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "ip_revision": "3",
+        "xci_name": "subtractor_4_bit_bslice_0_1",
+        "xci_path": "ip/subtractor_4_bit_bslice_0_1/subtractor_4_bit_bslice_0_1.xci",
+        "inst_hier_path": "bslice_2",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "2"
+          },
+          "DIN_TO": {
+            "value": "2"
+          },
+          "DIN_WIDTH": {
+            "value": "4"
+          }
+        }
+      },
+      "bslice_3": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "ip_revision": "3",
+        "xci_name": "subtractor_4_bit_bslice_0_2",
+        "xci_path": "ip/subtractor_4_bit_bslice_0_2/subtractor_4_bit_bslice_0_2.xci",
+        "inst_hier_path": "bslice_3",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "3"
+          },
+          "DIN_TO": {
+            "value": "3"
+          },
+          "DIN_WIDTH": {
+            "value": "4"
+          }
+        }
+      },
+      "aslice_1": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "ip_revision": "3",
+        "xci_name": "subtractor_4_bit_aslice_0_0",
+        "xci_path": "ip/subtractor_4_bit_aslice_0_0/subtractor_4_bit_aslice_0_0.xci",
+        "inst_hier_path": "aslice_1",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "1"
+          },
+          "DIN_TO": {
+            "value": "1"
+          },
+          "DIN_WIDTH": {
+            "value": "4"
+          }
+        }
+      },
+      "aslice_2": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "ip_revision": "3",
+        "xci_name": "subtractor_4_bit_aslice_0_1",
+        "xci_path": "ip/subtractor_4_bit_aslice_0_1/subtractor_4_bit_aslice_0_1.xci",
+        "inst_hier_path": "aslice_2",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "2"
+          },
+          "DIN_TO": {
+            "value": "2"
+          },
+          "DIN_WIDTH": {
+            "value": "4"
+          }
+        }
+      },
+      "aslice_3": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "ip_revision": "3",
+        "xci_name": "subtractor_4_bit_aslice_0_2",
+        "xci_path": "ip/subtractor_4_bit_aslice_0_2/subtractor_4_bit_aslice_0_2.xci",
+        "inst_hier_path": "aslice_3",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "3"
+          },
+          "DIN_TO": {
+            "value": "3"
+          },
+          "DIN_WIDTH": {
+            "value": "4"
+          }
+        }
+      },
+      "xor_generic_2": {
+        "vlnv": "xilinx.com:module_ref:xor_generic:1.0",
+        "ip_revision": "1",
+        "xci_name": "subtractor_4_bit_xor_generic_1_1",
+        "xci_path": "ip/subtractor_4_bit_xor_generic_1_1/subtractor_4_bit_xor_generic_1_1.xci",
+        "inst_hier_path": "xor_generic_2",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "xor_generic",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a": {
+            "direction": "I"
+          },
+          "b": {
+            "direction": "I"
+          },
+          "o": {
+            "direction": "O"
+          }
+        }
+      },
+      "xor_generic_3": {
+        "vlnv": "xilinx.com:module_ref:xor_generic:1.0",
+        "ip_revision": "1",
+        "xci_name": "subtractor_4_bit_xor_generic_1_2",
+        "xci_path": "ip/subtractor_4_bit_xor_generic_1_2/subtractor_4_bit_xor_generic_1_2.xci",
+        "inst_hier_path": "xor_generic_3",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "xor_generic",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a": {
+            "direction": "I"
+          },
+          "b": {
+            "direction": "I"
+          },
+          "o": {
+            "direction": "O"
+          }
+        }
+      },
+      "full_adder_2": {
+        "vlnv": "user.org:user:full_adder:1.0",
+        "ip_revision": "2",
+        "xci_name": "subtractor_4_bit_full_adder_1_1",
+        "xci_path": "ip/subtractor_4_bit_full_adder_1_1/subtractor_4_bit_full_adder_1_1.xci",
+        "inst_hier_path": "full_adder_2"
+      },
+      "full_adder_3": {
+        "vlnv": "user.org:user:full_adder:1.0",
+        "ip_revision": "2",
+        "xci_name": "subtractor_4_bit_full_adder_1_2",
+        "xci_path": "ip/subtractor_4_bit_full_adder_1_2/subtractor_4_bit_full_adder_1_2.xci",
+        "inst_hier_path": "full_adder_3"
+      },
+      "xlconcat_0": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "ip_revision": "5",
+        "xci_name": "subtractor_4_bit_xlconcat_0_0",
+        "xci_path": "ip/subtractor_4_bit_xlconcat_0_0/subtractor_4_bit_xlconcat_0_0.xci",
+        "inst_hier_path": "xlconcat_0",
+        "parameters": {
+          "NUM_PORTS": {
+            "value": "5"
+          }
+        }
+      },
+      "NOT_gate_0": {
+        "vlnv": "xilinx.com:module_ref:NOT_gate:1.0",
+        "ip_revision": "1",
+        "xci_name": "subtractor_4_bit_NOT_gate_0_0",
+        "xci_path": "ip/subtractor_4_bit_NOT_gate_0_0/subtractor_4_bit_NOT_gate_0_0.xci",
+        "inst_hier_path": "NOT_gate_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "NOT_gate",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I"
+          },
+          "B": {
+            "direction": "O"
+          }
+        }
+      },
+      "xlconcat_1": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "ip_revision": "5",
+        "xci_name": "subtractor_4_bit_xlconcat_1_0",
+        "xci_path": "ip/subtractor_4_bit_xlconcat_1_0/subtractor_4_bit_xlconcat_1_0.xci",
+        "inst_hier_path": "xlconcat_1",
+        "parameters": {
+          "NUM_PORTS": {
+            "value": "4"
+          }
+        }
+      }
+    },
+    "nets": {
+      "NOT_gate_0_B": {
+        "ports": [
+          "NOT_gate_0/B",
+          "xlconcat_0/In4"
+        ]
+      },
+      "a_1": {
+        "ports": [
+          "a",
+          "aslice_0/Din",
+          "aslice_1/Din",
+          "aslice_2/Din",
+          "aslice_3/Din"
+        ]
+      },
+      "aslice_0_Dout": {
+        "ports": [
+          "aslice_0/Dout",
+          "full_adder_0/a"
+        ]
+      },
+      "aslice_1_Dout": {
+        "ports": [
+          "aslice_1/Dout",
+          "full_adder_1/a"
+        ]
+      },
+      "aslice_2_Dout": {
+        "ports": [
+          "aslice_2/Dout",
+          "full_adder_2/a"
+        ]
+      },
+      "aslice_3_Dout": {
+        "ports": [
+          "aslice_3/Dout",
+          "full_adder_3/a"
+        ]
+      },
+      "b_1": {
+        "ports": [
+          "b",
+          "bslice_1/Din",
+          "bslice_2/Din",
+          "bslice_0/Din",
+          "bslice_3/Din"
+        ]
+      },
+      "bslice_0_Dout": {
+        "ports": [
+          "bslice_0/Dout",
+          "xor_generic_0/b"
+        ]
+      },
+      "bslice_1_Dout": {
+        "ports": [
+          "bslice_1/Dout",
+          "xor_generic_1/b"
+        ]
+      },
+      "bslice_2_Dout": {
+        "ports": [
+          "bslice_2/Dout",
+          "xor_generic_2/b"
+        ]
+      },
+      "bslice_3_Dout": {
+        "ports": [
+          "bslice_3/Dout",
+          "xor_generic_3/b"
+        ]
+      },
+      "full_adder_0_c_out": {
+        "ports": [
+          "full_adder_0/c_out",
+          "full_adder_1/c_in"
+        ]
+      },
+      "full_adder_0_s": {
+        "ports": [
+          "full_adder_0/s",
+          "xlconcat_0/In0",
+          "xlconcat_1/In0"
+        ]
+      },
+      "full_adder_1_c_out": {
+        "ports": [
+          "full_adder_1/c_out",
+          "full_adder_2/c_in"
+        ]
+      },
+      "full_adder_1_s": {
+        "ports": [
+          "full_adder_1/s",
+          "xlconcat_0/In1",
+          "xlconcat_1/In1"
+        ]
+      },
+      "full_adder_2_c_out": {
+        "ports": [
+          "full_adder_2/c_out",
+          "full_adder_3/c_in"
+        ]
+      },
+      "full_adder_2_s": {
+        "ports": [
+          "full_adder_2/s",
+          "xlconcat_0/In2",
+          "xlconcat_1/In2"
+        ]
+      },
+      "full_adder_3_c_out": {
+        "ports": [
+          "full_adder_3/c_out",
+          "NOT_gate_0/A",
+          "c_out"
+        ]
+      },
+      "full_adder_3_s": {
+        "ports": [
+          "full_adder_3/s",
+          "xlconcat_0/In3",
+          "xlconcat_1/In3"
+        ]
+      },
+      "xlconcat_0_dout": {
+        "ports": [
+          "xlconcat_0/dout",
+          "signed_output"
+        ]
+      },
+      "xlconcat_1_dout": {
+        "ports": [
+          "xlconcat_1/dout",
+          "s"
+        ]
+      },
+      "xlconstant_0_dout": {
+        "ports": [
+          "xlconstant_0/dout",
+          "xor_generic_0/a",
+          "xor_generic_1/a",
+          "xor_generic_2/a",
+          "xor_generic_3/a",
+          "full_adder_0/c_in"
+        ]
+      },
+      "xor_generic_0_o": {
+        "ports": [
+          "xor_generic_0/o",
+          "full_adder_0/b"
+        ]
+      },
+      "xor_generic_1_o": {
+        "ports": [
+          "xor_generic_1/o",
+          "full_adder_1/b"
+        ]
+      },
+      "xor_generic_2_o": {
+        "ports": [
+          "xor_generic_2/o",
+          "full_adder_2/b"
+        ]
+      },
+      "xor_generic_3_o": {
+        "ports": [
+          "xor_generic_3/o",
+          "full_adder_3/b"
+        ]
+      }
+    }
+  }
+}

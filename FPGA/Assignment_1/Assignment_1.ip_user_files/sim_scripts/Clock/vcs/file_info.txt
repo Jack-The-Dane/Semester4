@@ -1,0 +1,11 @@
+Clock_Counter_generic_0_0.v,verilog,xil_defaultlib,../../../bd/Clock/ip/Clock_Counter_generic_0_0/sim/Clock_Counter_generic_0_0.v,
+Clock_Counter_generic_0_1.v,verilog,xil_defaultlib,../../../bd/Clock/ip/Clock_Counter_generic_0_1/sim/Clock_Counter_generic_0_1.v,
+Clock_Counter_generic_0_2.v,verilog,xil_defaultlib,../../../bd/Clock/ip/Clock_Counter_generic_0_2/sim/Clock_Counter_generic_0_2.v,
+Clock_digit_splitter_0_0.v,verilog,xil_defaultlib,../../../bd/Clock/ip/Clock_digit_splitter_0_0/sim/Clock_digit_splitter_0_0.v,
+Clock_digit_splitter_0_1.v,verilog,xil_defaultlib,../../../bd/Clock/ip/Clock_digit_splitter_0_1/sim/Clock_digit_splitter_0_1.v,
+Clock_BCD_to_7seg_0_0.v,verilog,xil_defaultlib,../../../bd/Clock/ip/Clock_BCD_to_7seg_0_0/sim/Clock_BCD_to_7seg_0_0.v,
+Clock_BCD_to_7seg_0_1.v,verilog,xil_defaultlib,../../../bd/Clock/ip/Clock_BCD_to_7seg_0_1/sim/Clock_BCD_to_7seg_0_1.v,
+Clock_BCD_to_7seg_0_2.v,verilog,xil_defaultlib,../../../bd/Clock/ip/Clock_BCD_to_7seg_0_2/sim/Clock_BCD_to_7seg_0_2.v,
+Clock_BCD_to_7seg_0_3.v,verilog,xil_defaultlib,../../../bd/Clock/ip/Clock_BCD_to_7seg_0_3/sim/Clock_BCD_to_7seg_0_3.v,
+Clock.v,verilog,xil_defaultlib,../../../bd/Clock/sim/Clock.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

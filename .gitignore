@@ -14,3 +14,9 @@ RemoteSystemTempFiles/
 .jxbrowser.userdata/
 .launches/
 EmbeddedProg/Indlejret_prog_gruppe12/
+Semesterprojekt_4/
+*.sim/
+*.cache/
+*.gen/
+EmbeddedProg/LCD_display_manual.pdf
+EmbeddedProg/LittleBookOfSemaphores.pdf
